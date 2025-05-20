@@ -16,4 +16,4 @@ A responsive and modern website built with [Bootstrap], using only HTML, CSS, an
 - ✅ Custom styling overrideststrap.com/)
 
 🌍 Live Demo
-https://esraalsayyed.github.io/Osaka/
+https://esraalsayyed.github.io/Osaka

@@ -6,7 +6,7 @@ A responsive and modern website built with [Bootstrap], using only HTML, CSS, an
 
 - HTML5
 - CSS3
-- [Bootstrap 5](https://getboo
+- [Bootstrap 5]
 
 ## 🧾 Features
 

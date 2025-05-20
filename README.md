@@ -1,1 +1,2 @@
-# Osaka, a Bootstrap practice. 
+# Osaka
+HTML, Css, Bootstrap 

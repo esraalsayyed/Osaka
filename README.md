@@ -1,4 +1,4 @@
-# 🚀 Bootstrap Project : Daniels
+# 🚀 Bootstrap Project : Osaka
 
 A responsive and modern website built with [Bootstrap], using only HTML, CSS, and Bootstrap's built-in components.
 

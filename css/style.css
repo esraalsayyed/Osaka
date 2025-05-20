@@ -506,7 +506,7 @@ footer p {
   #clients .back::before,
   #contact .back::before,
   #portfolio .back::before {
-    font-size: 50px;
+    font-size: 2.8125rem;
     font-weight: 800;
     letter-spacing: 3px !important;
     top: -55%;

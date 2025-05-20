@@ -1,0 +1,539 @@
+a {
+  text-decoration: none !important;
+}
+.my-padding {
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --main-color: #ff206e;
+}
+nav {
+  z-index: 999;
+  opacity: 90%;
+}
+nav .my-list {
+  font-size: 14px;
+  font-weight: 500;
+}
+nav .my-list a {
+  color: white;
+}
+nav .my-list .active {
+  color: var(--main-color) !important;
+}
+nav .my-list a:hover:not(.active) {
+  color: white !important;
+}
+header {
+  min-height: 100vh;
+  background-image: url(../image/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#home h1 {
+  font-size: 3.4375rem;
+  font-weight: 700;
+  color: #fff;
+}
+#home p {
+  color: #fff;
+  padding-bottom: 1.25rem;
+}
+#home .view {
+  color: var(--main-color);
+}
+.header-footer .my-list a {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ffffff52;
+  margin-left: 18px;
+}
+#home .icon i {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 700;
+}
+#home .icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+}
+.pill {
+  width: 25px;
+  height: 40px;
+  border: 1px solid #ffffff5b;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.pill .inner {
+  margin-top: 5px;
+  width: 3px;
+  height: 3px;
+  background-color: #fff;
+  animation: up-down 1.3s infinite alternate-reverse;
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#about {
+  background-image: url(../image/light_dot.jpg);
+}
+#about .title h2 {
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+#about .title p {
+  font-size: 13px;
+}
+#about .content h3 {
+  font-weight: 500;
+}
+#about .content p {
+  color: var(--main-color);
+}
+.back::before {
+  content: "ABOUT";
+  width: 100%;
+  height: 100%;
+  font-size: 90px;
+  font-weight: 900;
+  letter-spacing: 5px !important;
+  top: -100%;
+  left: 0;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.082);
+  z-index: -2;
+}
+#skills .back::before {
+  content: "MY SKILL";
+  color: #1a1a1a73;
+}
+#services .back::before {
+  content: "SERVICES";
+  color: #1a1a1a73;
+}
+#portfolio .back::before {
+  content: "PORTFOLIO";
+}
+#price .back::before {
+  content: "PRICE";
+}
+#clients .back::before {
+  content: "TESTIMONIALS";
+}
+#blog .back::before {
+  content: "BLOG";
+}
+#contact .back::before {
+  content: "GET IN TOUCH";
+  color: #ffffff13;
+}
+#skills .title h2,
+#portfolio .title h2,
+#price .title h2,
+#clients .title h2,
+#blog .title h2,
+#contact .title h2 {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+#skills .title p,
+#portfolio .title p,
+#price .title p,
+#clients .title p,
+#blog .title .p,
+#contact .title p {
+  font-size: 13px;
+}
+#skills .circle {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px dotted var(--main-color);
+  color: var(--main-color);
+  margin: auto;
+}
+#skills .percent {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+#skills .circle span {
+  font-size: 14px;
+  font-weight: 600;
+}
+#services {
+  background-image: url(../image/dark_dot.jpg);
+}
+#services .title h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+#services .title p {
+  font-size: 0.8125rem;
+}
+#services .cards .icon {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 30px);
+}
+#services .cards .icon i {
+  font-size: 24px;
+  font-weight: 900;
+  transition: all 500ms;
+  color: #eee !important;
+}
+#services .my-card {
+  background-color: #fff;
+  padding: 10px 35px !important;
+}
+#services .my-card:hover i {
+  color: var(--main-color) !important;
+}
+#services .my-card h3 {
+  position: relative !important;
+}
+#services .my-card h3::after {
+  content: "";
+  width: 20%;
+  height: 1px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 112%;
+  left: 40%;
+  transition: transform 500ms;
+}
+#services .my-card:hover h3::after {
+  transform: scale(1.2);
+}
+#portfolio .my-tabs button {
+  color: black !important;
+  font-size: 20px;
+  font-weight: 400;
+  transition: all 500ms;
+}
+#portfolio .my-tabs .active {
+  color: var(--main-color) !important;
+}
+#portfolio .my-tabs button:hover {
+  color: var(--main-color) !important;
+}
+#portfolio .layer p {
+  font-size: 14px;
+}
+#portfolio .layer .icon i {
+  font-weight: 900 !important;
+  font-size: 1rem !important;
+}
+#portfolio .layer .icon {
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+#portfolio .content {
+  overflow: hidden;
+  position: relative;
+}
+#portfolio .content:hover {
+  cursor: pointer;
+}
+#portfolio .layer {
+  background-color: #d2d2d2;
+  top: 0;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  transform: translateY(-100%);
+  transition: all 500ms;
+}
+#portfolio .layer .layer-con {
+  transform: translateY(-100%);
+  transition: all 500ms;
+}
+#portfolio .content:hover .layer-con {
+  transform: translateY(0);
+}
+#portfolio .content:hover .layer {
+  transform: translateY(0);
+}
+#price .box {
+  padding: 50px 100px;
+  position: relative;
+  overflow: hidden;
+}
+#price .box p {
+  color: #fff;
+  font-size: 1.5625rem;
+}
+#price .box span {
+  font-size: 4.375rem;
+  font-weight: 900;
+  color: var(--main-color);
+}
+#price .card-body button {
+  transition: all 500ms;
+}
+#price .card-body button:hover {
+  background-color: #424649 !important;
+}
+#price .box h3::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  width: 40%;
+  height: 2px;
+  background-color: #eee;
+}
+#price .box:after {
+  content: "POPULAR";
+  width: 60%;
+  height: 30px;
+  top: 13%;
+  right: -15%;
+  background-color: #eee;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.testimonial {
+  background-image: url(../image/stat.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.testimonial .layer {
+  opacity: 90%;
+}
+.testimonial .content i {
+  font-size: 48px;
+  font-weight: 900;
+}
+.testimonial .content h3 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+.testimonial .content span {
+  color: white;
+  font-weight: 400;
+}
+#clients .photo img {
+  width: 80px;
+}
+#clients .content span {
+  font-size: 14px !important;
+  position: relative;
+}
+#clients .content span::after {
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 100%;
+  left: 23%;
+}
+#blog .card-body a {
+  font-size: 14px;
+  color: var(--main-color);
+}
+#blog .icon {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  bottom: -30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+#blog .icon i {
+  transition: all 500ms;
+}
+#blog .icon:hover i {
+  color: var(--main-color);
+}
+#contact input,
+#contact textarea {
+  border: 1px solid;
+  border-color: black black #333333 black;
+  background-color: black;
+}
+#contact .form-control:focus {
+  border-color: black black var(--main-color) black;
+  box-shadow: none;
+}
+#contact textarea {
+  padding-bottom: 150px !important;
+}
+#contact button {
+  transition: all 500ms;
+}
+#contact button:hover {
+  background-color: #d3d4d5;
+}
+#contact .contact-list h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+#contact .contact-list span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer p {
+  font-size: 14px;
+  font-weight: 500;
+}
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  header .header-footer .my-list {
+    flex-direction: column;
+  }
+  #home h1 {
+    font-size: 2.75rem;
+    font-weight: 800;
+  }
+  #home p,
+  .view {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .icon i {
+    font-size: 16px;
+    font-weight: 900;
+  }
+  .icon a {
+    height: 40px;
+    width: 30px;
+  }
+  #portfolio .my-tabs button {
+    font-size: 16px;
+  }
+  #portfolio .layer .icon i {
+    font-size: 13px !important;
+    font-weight: 400;
+  }
+  #portfolio .layer .icon {
+    padding-top: 12px;
+  }
+  #portfolio .layer h3 {
+    font-size: 13px !important;
+  }
+  #portfolio .layer p {
+    font-size: 11px !important;
+  }
+  #portfolio .layer {
+    opacity: 98%;
+  }
+  #clients .back::before,
+  #contact .back::before,
+  #portfolio .back::before {
+    font-size: 68px;
+    font-weight: 900;
+    letter-spacing: 3px !important;
+    top: -88%;
+    left: 0;
+  }
+  #blog .icon {
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+  #contact .contact-list h4 {
+    font-size: 18px;
+  }
+  #contact .contact-list span {
+    font-size: 13px;
+  }
+  #contact a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 575.98px) {
+  .back::before {
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 8px !important;
+    top: -45%;
+    left: 0;
+  }
+  #clients .back::before,
+  #contact .back::before,
+  #portfolio .back::before {
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 3px !important;
+    top: -55%;
+    left: 0;
+  }
+  #about .title p,
+  #skills .title p,
+  #services .title p {
+    font-size: 10px;
+  }
+  #about .content h3 {
+    font-size: 21px !important;
+  }
+  #about .content p {
+    font-size: 16px !important;
+    font-weight: 500;
+  }
+  #about article,
+  a,
+  #services .my-card p {
+    font-size: 13px !important;
+  }
+  #services .my-card h3 {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+  }
+  #portfolio .layer .icon {
+    padding-top: 20px;
+  }
+}
